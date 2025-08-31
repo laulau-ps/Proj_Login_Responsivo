@@ -1,0 +1,184 @@
+/*IMPORTA A FONTE "POPPINS" DO GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*RESET CSS E CONFIGURAÇÃO GLOBAL DA PÁGINA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*ESTILIZAÇÃO DO CORPO DA PÁGINA*/
+body {
+    background: #a20dd8;
+
+    /* Esconde qualquer conteúdo que ultrapasse a tela */
+    overflow: hidden;
+}
+
+/*CONTAINER PRINCIPAL QUE CENTRALIZA O CONTEÚDO*/
+.container {
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+}
+
+/*-----------------------------*/
+
+/*ESTILIZAÇÃO CAIXA WRAPPER */
+.wrapper {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*ESTILIZAÇÃO TÍTULO DO WRAPPER*/
+.wrapper .titulo {
+    line-height: 90px;
+    background-color: #74099b;
+    text-align: center;
+
+    /* Só arredonda levemente as bordas superiores */
+    border-radius: 5px 5px 0 0;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*-----------------------------*/
+
+/*ESTILIZAÇÃO FORMULÁRIO*/
+.wrapper form {
+    padding: 30px 25px 25px 25px;
+}
+
+/*1. ESTILIZAÇÃO DOS CAMPOS PREENCHIVEIS */
+.wrapper form .linha {
+    height: 45px;
+    background-color: antiquewhite;
+    margin-bottom: 15px;
+
+    /* Necessário para posicionar ícone dentro */
+    position: relative;
+}
+
+/*2. INPUT DAS LINHAS*/
+.wrapper form .linha input {
+    height: 100%;
+    width: 100%;
+
+    /* Espaço para não sobrepor o ícone */
+    padding-left: 60px;
+
+    /* Remove a borda azul padrão ao focar */
+    outline: none;
+
+    border-radius: 5px;
+    border: 1px solid rgb(208, 173, 230);
+    font-size: 16px;
+}
+
+/*2.1 - CONFIGURAÇÃO INPUT QUANDO ESTÁ EM FOCO*/
+form .linha input:focus {
+
+    /* Destaca a borda em roxo */
+    border-color: #74099b;
+
+    /* Efeito de sombra interna */
+    box-shadow: inset 0px 0px 2px 2px rgba(188, 26, 156, 0.25);
+
+    /* Transição suave */
+    transition: all 0.3s ease;
+}
+
+/*3. ESTILIZAÇAO DOS ÍCONES INTERNOS*/
+.wrapper form .linha i {
+
+    /* Fica fixo dentro do campo */
+    position: absolute;
+
+    width: 47px;
+    height: 100%;
+    background-color: #74099b;
+    border: 1px solid #74099b;
+    border-radius: 5px 0 0 5px;
+
+    /*Posiciona o ícone centralmente*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*Muda a cor e tamanho do icone*/
+    color: white;
+    font-size: 18px;
+}
+
+/*--------------------------------------*/
+
+/*ESTILIZAÇÃO LINK DE RECUPERAR SENHA*/
+
+/*1. POSICONAMENTO*/
+.wrapper form .rec-senha {
+    margin: -8px 0 20px 0;
+}
+
+/*2. ESTILO TAG A*/
+.wrapper form .rec-senha a {
+    color: #74099b;
+    font-size: 17px;
+
+    /*Remove o sublinhado padrão*/
+    text-decoration: none;
+}
+
+/*3. CONFIGURAÇÃO DO HOVER*/
+.wrapper form .rec-senha a:hover {
+
+    /*Gera o sublinhado somente quando o cursor do mouse passa sob o link*/
+    text-decoration: underline;
+}
+
+/*--------------------------------------*/
+
+/*ESTILIZAÇÃO LINK DE CADASTRO*/
+
+/*1. ALINHAMENTO*/
+.wrapper form .cadastro {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+/*2. ESTILO DA TAG A*/
+.wrapper form .cadastro a {
+    color: #74099b;
+    text-decoration: none;
+}
+
+/*CONFIGURAÇÃO DO HOVER*/
+.wrapper form .cadastro a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------------------------*/
+
+/*ESTILIZAÇÃO BOTÃO DE ENTRAR*/
+.wrapper form .botao input {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 0px;
+    background-color: #74099b;
+    border: 1px solid #74099b;
+
+    /* Cursor de "mãozinha" */
+    cursor: pointer;
+}
+
+/*CONFIGURAÇÃO DO HOVER*/
+.wrapper form .botao input:hover {
+
+    /* Escurece o botão no hover */
+    background: #570874;
+}
